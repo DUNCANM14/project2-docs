@@ -99,20 +99,15 @@ Users authenticate with &lt;code&gt;/api/users/login&lt;/code&gt; to receive a B
 &lt;p&gt;This page displays all screenshots taken during development and testing of the Project 2 REST API.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;docker-containers-running&#34;&gt;Docker Containers Running&lt;/h2&gt;
-&lt;p&gt;Confirms the Laravel app, MySQL database, and phpMyAdmin are all running.
-&lt;img alt=&#34;Docker Containers&#34; loading=&#34;lazy&#34; src=&#34;https://duncanm14.github.io/project2-docs/data/DockerPS.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Confirms the Laravel app, MySQL database, and phpMyAdmin are all running.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Docker Containers&#34; loading=&#34;lazy&#34; src=&#34;data/DockerPS.png&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;phpmyadmin-connected-to-mysql&#34;&gt;phpMyAdmin Connected to MySQL&lt;/h2&gt;
-&lt;p&gt;Shows the &lt;code&gt;project2&lt;/code&gt; database and Laravel-created tables.
-&lt;img alt=&#34;phpMyAdmin&#34; loading=&#34;lazy&#34; src=&#34;https://duncanm14.github.io/project2-docs/data/phpMyAdmin.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;phpMyAdmin is successfully connected to the &lt;code&gt;project2&lt;/code&gt; database, showing tables created by Laravel migrations.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;phpMyAdmin&#34; loading=&#34;lazy&#34; src=&#34;data/phpMyAdmin.png&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;api--list-users-get-apiusers&#34;&gt;API – List Users (&lt;code&gt;GET /api/users&lt;/code&gt;)&lt;/h2&gt;
-&lt;p&gt;Displays JSON output from querying all users.
-&lt;img alt=&#34;GET Users&#34; loading=&#34;lazy&#34; src=&#34;https://duncanm14.github.io/project2-docs/data/GETapiusers.png&#34;&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;create-user-post-apiusers&#34;&gt;Create User (&lt;code&gt;POST /api/users&lt;/code&gt;)&lt;/h2&gt;
-&lt;p&gt;Valid user creation using the /api/users endpoint.
-&lt;img alt=&#34;Create User&#34; loading=&#34;lazy&#34; src=&#34;https://duncanm14.github.io/project2-docs/data/CreateUser.png&#34;&gt;&lt;/p&gt;</description>
+&lt;p&gt;Displays JSON output from querying all users.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
