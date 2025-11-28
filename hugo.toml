@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://duncanm14.github.io/project2-docs/"
 languageCode = "en-us"
 title = "Project 2 – Secure REST API with Docker Deployment"
 theme = "PaperMod"

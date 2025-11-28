@@ -2,22 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/</loc>
+    <loc>https://duncanm14.github.io/project2-docs/</loc>
   </url><url>
-    <loc>/api/</loc>
+    <loc>https://duncanm14.github.io/project2-docs/api/</loc>
   </url><url>
-    <loc>/deploy/</loc>
+    <loc>https://duncanm14.github.io/project2-docs/deploy/</loc>
   </url><url>
-    <loc>/docker/</loc>
+    <loc>https://duncanm14.github.io/project2-docs/docker/</loc>
   </url><url>
-    <loc>/overview/</loc>
+    <loc>https://duncanm14.github.io/project2-docs/overview/</loc>
   </url><url>
-    <loc>/screenshots/</loc>
+    <loc>https://duncanm14.github.io/project2-docs/screenshots/</loc>
   </url><url>
-    <loc>/testing/</loc>
+    <loc>https://duncanm14.github.io/project2-docs/testing/</loc>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>https://duncanm14.github.io/project2-docs/categories/</loc>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>https://duncanm14.github.io/project2-docs/tags/</loc>
   </url>
 </urlset>
