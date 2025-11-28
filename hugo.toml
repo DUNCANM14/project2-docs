@@ -2,6 +2,7 @@ baseURL = "/"
 languageCode = "en-us"
 title = "Project 2 – Secure REST API with Docker Deployment"
 theme = "PaperMod"
+publishDir = "docs"
 
 [params]
   defaultTheme = "auto"
