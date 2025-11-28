@@ -15,10 +15,7 @@ This confirms that the application stack is running correctly:
 ---
 
 ## phpMyAdmin Connected to MySQL
-phpMyAdmin is successfully connected to the `project2` database, showing tables created by Laravel migrations:  
-- users  
-- friends  
-- migrations  
+phpMyAdmin is successfully connected to the `project2` database, showing tables created by Laravel migrations:
 
 ![phpMyAdmin](/data/phpMyAdmin.png)
 
@@ -49,7 +46,7 @@ This token is required for all protected endpoints.
 
 ## Update Username (`PUT /api/users/{id}`)
 A user successfully changed their username.  
-Screenshot shows the request body + updated response data.
+Screenshot shows the request body and the updated response data.
 
 ![Change Username](/data/changeusername.png)
 
@@ -58,24 +55,19 @@ Screenshot shows the request body + updated response data.
 ## Update Password (`PUT /api/users/me/password`)
 A logged-in user changes their password using their Bearer token.
 
-![Password Updated](/data/password updated.png)
+![Password Updated](/data/password_updated.png)
 
 ---
 
 ## Running Database Migrations
 Shows a successful migration inside the Docker container.
 
-![Database Migration](/data/Database migration.png)
+![Database Migration](/data/database_migration.png)
 
 ---
 
 ## Deployment Script Output (`run.sh`)
-This screenshot shows your Git Bash / Windows-compatible deployment script executing:
-- Composer install  
-- Docker build  
-- Laravel key generation (if applicable)  
-- Migrations  
-- App start  
+Your deployment script executing:
 
 ![Deployment Script](/data/setuporrun.png)
 ![Deployment Script 2](/data/Run.png)
@@ -91,6 +83,7 @@ The custom HTML API tester (`test_api.html`) loading correctly on port 8000.
 
 # Summary
 These screenshots collectively demonstrate:
+
 - Docker environment working  
 - MySQL + phpMyAdmin working  
 - Full REST API functionality  
