@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Project 2 – Secure REST API with Docker Deployment</title>
+    <link>//localhost:1313/</link>
+    <description>Recent content on Project 2 – Secure REST API with Docker Deployment</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en-us</language>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>//localhost:1313/api/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/api/</guid>
+      <description>&lt;h1 id=&#34;api-endpoints-laravel-12--sanctum-authentication&#34;&gt;API Endpoints (Laravel 12 + Sanctum Authentication)&lt;/h1&gt;
+&lt;p&gt;Your API uses Laravel Sanctum for token-based authentication.&lt;br&gt;
+Users authenticate with &lt;code&gt;/api/users/login&lt;/code&gt; to receive a Bearer token, which must be included in all protected requests.&lt;/p&gt;
+&lt;p&gt;Authorization header format:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Authorization: Bearer YOUR_TOKEN_HERE
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h1 id=&#34;authentication&#34;&gt;Authentication&lt;/h1&gt;
+&lt;h2 id=&#34;post-apiuserslogin&#34;&gt;POST /api/users/login&lt;/h2&gt;
+&lt;p&gt;Authenticates a user and returns a Sanctum API token.&lt;/p&gt;
+&lt;h3 id=&#34;request-body&#34;&gt;Request Body&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;username&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;demo&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;password&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;password123&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;response&#34;&gt;Response&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;token&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;5|xxxxxxxxxxxxxxxxxxxx&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;get-apiusersme&#34;&gt;GET /api/users/me&lt;/h2&gt;
+&lt;p&gt;Protected route. Returns the currently authenticated user.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/deploy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/deploy/</guid>
+      <description>&lt;h1 id=&#34;deployment-automation&#34;&gt;Deployment Automation&lt;/h1&gt;
+&lt;h2 id=&#34;runsh&#34;&gt;run.sh&lt;/h2&gt;
+&lt;p&gt;Runs the Laravel app locally:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;./run.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;setupsh&#34;&gt;setup.sh&lt;/h2&gt;
+&lt;p&gt;Full one-command Docker builder:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;./setup.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Screenshots included in the Screenshots page.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/docker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/docker/</guid>
+      <description>&lt;h1 id=&#34;docker-setup&#34;&gt;Docker Setup&lt;/h1&gt;
+&lt;p&gt;This project runs using:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Laravel 12 (php:8.3-fpm)&lt;/li&gt;
+&lt;li&gt;MySQL 8&lt;/li&gt;
+&lt;li&gt;phpMyAdmin&lt;/li&gt;
+&lt;li&gt;Composer installed in the container&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;start-all-containers&#34;&gt;Start all containers&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;docker-compose up -d
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;rebuild-app-container&#34;&gt;Rebuild app container&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;docker-compose build --no-cache
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;stop-everything&#34;&gt;Stop everything&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;docker-compose down
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/overview/</guid>
+      <description>&lt;h1 id=&#34;project-overview&#34;&gt;Project Overview&lt;/h1&gt;
+&lt;p&gt;This project re-implements my Project 1 REST API using &lt;strong&gt;Laravel 12&lt;/strong&gt;, adds full &lt;strong&gt;Sanctum authentication&lt;/strong&gt;, and deploys the environment using &lt;strong&gt;Docker&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;deliverables-completed&#34;&gt;Deliverables Completed&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Laravel 12 REST API&lt;/li&gt;
+&lt;li&gt;User CRUD&lt;/li&gt;
+&lt;li&gt;Login → Bearer Token&lt;/li&gt;
+&lt;li&gt;Friends system&lt;/li&gt;
+&lt;li&gt;MySQL migrations + models&lt;/li&gt;
+&lt;li&gt;Dockerized Laravel app&lt;/li&gt;
+&lt;li&gt;phpMyAdmin included&lt;/li&gt;
+&lt;li&gt;Shell script deployment&lt;/li&gt;
+&lt;li&gt;Hugo documentation site&lt;/li&gt;
+&lt;li&gt;GitHub Pages CI/CD&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/screenshots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/screenshots/</guid>
+      <description>&lt;h1 id=&#34;project-2--screenshots--explanations&#34;&gt;Project 2 – Screenshots &amp;amp; Explanations&lt;/h1&gt;
+&lt;p&gt;This page shows the screenshots captured during development and testing of the Project 2 REST API, along with explanations of what each screenshot demonstrates.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;docker-containers-running&#34;&gt;Docker Containers Running&lt;/h2&gt;
+&lt;p&gt;This confirms that the application stack is running correctly:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;project2_app&lt;/strong&gt; → Laravel / PHP backend&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;project2_mysql&lt;/strong&gt; → MySQL database&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;project2_phpmyadmin&lt;/strong&gt; → DB dashboard&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt=&#34;Docker Containers&#34; loading=&#34;lazy&#34; src=&#34;//localhost:1313/data/DockerPS.png&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;phpmyadmin-connected-to-mysql&#34;&gt;phpMyAdmin Connected to MySQL&lt;/h2&gt;
+&lt;p&gt;phpMyAdmin is successfully connected to the &lt;code&gt;project2&lt;/code&gt; database, showing tables created by Laravel migrations:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/testing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/testing/</guid>
+      <description>&lt;h1 id=&#34;testing-the-api&#34;&gt;Testing the API&lt;/h1&gt;
+&lt;p&gt;The following examples demonstrate how to test the Laravel API using curl with Sanctum Bearer tokens.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;1-login-and-retrieve-a-token&#34;&gt;1. Login and Retrieve a Token&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;curl -X POST http://localhost:8000/api/users/login \
+  -H &amp;#34;Content-Type: application/json&amp;#34; \
+  -d &amp;#39;{&amp;#34;username&amp;#34;:&amp;#34;demo&amp;#34;,&amp;#34;password&amp;#34;:&amp;#34;password123&amp;#34;}&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Example response:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{ &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;token&amp;#34;&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;5|AcIFWuvGKehNRfo1hux8vIdtFg4lar6I25PATirc07372912&amp;#34;&lt;/span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h1 id=&#34;2-test-a-protected-route-current-authenticated-user&#34;&gt;2. Test a Protected Route (Current Authenticated User)&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;curl -X GET http://localhost:8000/api/users/me \
+  -H &amp;#34;Authorization: Bearer 5|AcIFWuvGKehNRfo1hux8vIdtFg4lar6I25PATirc07372912&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h1 id=&#34;3-update-the-authenticated-users-password&#34;&gt;3. Update the Authenticated User&amp;rsquo;s Password&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;curl -X PUT http://localhost:8000/api/users/me/password \
+  -H &amp;#34;Authorization: Bearer 5|AcIFWuvGKehNRfo1hux8vIdtFg4lar6I25PATirc07372912&amp;#34; \
+  -H &amp;#34;Content-Type: application/json&amp;#34; \
+  -d &amp;#39;{&amp;#34;password&amp;#34;:&amp;#34;newsecurepassword&amp;#34;}&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h1 id=&#34;4-create-a-new-user&#34;&gt;4. Create a New User&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;curl -X POST http://localhost:8000/api/users \
+  -H &amp;#34;Content-Type: application/json&amp;#34; \
+  -d &amp;#39;{&amp;#34;username&amp;#34;:&amp;#34;bob&amp;#34;,&amp;#34;email&amp;#34;:&amp;#34;bob@test.com&amp;#34;,&amp;#34;password&amp;#34;:&amp;#34;pass&amp;#34;}&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h1 id=&#34;5-list-all-users&#34;&gt;5. List All Users&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;curl -X GET http://localhost:8000/api/users
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h1 id=&#34;6-add-a-friend-relationship&#34;&gt;6. Add a Friend Relationship&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;curl -X POST http://localhost:8000/api/users/1/friends \
+  -H &amp;#34;Content-Type: application/json&amp;#34; \
+  -d &amp;#39;{&amp;#34;friend_id&amp;#34;: 2}&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h1 id=&#34;7-list-a-users-friends&#34;&gt;7. List a User&amp;rsquo;s Friends&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;curl -X GET http://localhost:8000/api/users/1/friends
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+  </channel>
+</rss>
